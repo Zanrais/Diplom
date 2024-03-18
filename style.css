@@ -1,0 +1,315 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: 'Oswald';
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* index */
+
+.nav .container {
+  height: 80px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.logoNav img {
+  height: 50px;
+  width: 50px;
+}
+
+.logoNav p {
+  color: white;
+  font-size: 15px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  font-size: 23px;
+}
+
+.menu ul li a:hover {
+  color: #f7d431;
+  text-decoration: underline;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  gap: 5px;
+}
+
+.contact img {
+  height: 15px;
+  width: 15px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  min-height: 875px;
+  background-image: url(img/homeimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  max-width: 450px;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+.header p {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.header button {
+  width: 230px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #832636;
+  color: #FEFEFE;
+  font-size: 27px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .header button:hover {
+    background-color: #ff324d;
+    transition: 0.5s;
+  }
+}
+
+@media (hover: hover) {
+  .anketa button:hover {
+    background-color: #832636;
+    transition: 0.5s;
+  }
+}
+
+.basics {
+  height: 875px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.basics .container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.basics h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+/* company */
+
+.mainCompany {
+  height: 875px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainCompany .description {
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mainCompany h1 {
+  font-size: 30px;
+}
+
+.mainCompany p {
+  font-size: 20px;
+}
+
+.mainCompany pre {
+  font-size: 15px;
+}
+
+/* zayavka */
+
+.anketa {
+  min-height: 875px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(img/zayavka.jpg);
+}
+
+.anketa .container {
+  background-color: rgba(0, 0, 0, 0.603);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.form input {
+  height: 45px;
+  width: 485px;
+  font-size: 15px;
+  padding-left: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+.container textarea {
+  max-width: 980px;
+  min-width: 985px;
+  min-height: 100px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+.anketa button {
+  height: 35px;
+  width: 100px;
+  background-color: #ff324d;
+  border-radius: 5px;
+  font-size: 17px;
+  margin-left: 3px;
+}
+
+/* contacts */
+
+.boxinfo {
+  max-width: 1920px;
+  width: 100%;
+  height: 900px;
+  margin: 0 auto;
+}
+
+.boxinfo1 {
+  height: 336px;
+  padding-top: 40px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.map {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 536px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  text-indent: 10px;
+}
+
+.info img {
+  width: 20px;
+  height: 20px;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(8, 8, 8);
+  color: rgb(148, 148, 148);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50%;
+}
+
+.logoFooter {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  gap: 10px;
+}
